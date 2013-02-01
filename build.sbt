@@ -8,7 +8,7 @@ scalaVersion := "2.9.2"
 
 scalaSource in Compile <<= baseDirectory(_ / "src")
 
-scalaSource in Test <<= baseDirectory(_ / "test" / "src")
+scalaSource in Test <<= baseDirectory(_ / "example" / "src")
 
 libraryDependencies ++= Seq( 
   "org.specs2" %% "specs2" % "1.12.3" % "test",
